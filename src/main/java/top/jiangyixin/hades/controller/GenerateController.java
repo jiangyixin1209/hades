@@ -3,7 +3,6 @@ package top.jiangyixin.hades.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import top.jiangyixin.hades.Query;
 
 /**
  * @author jiangyixin
@@ -12,13 +11,12 @@ import top.jiangyixin.hades.Query;
 public class GenerateController {
 
 	@PostMapping("/list")
-	public String list(@RequestBody Query query) {
+	public String list() {
 		return "";
 	}
 
 	@PostMapping("/code")
-	public String code(@RequestBody Query query) {
-		String[] tableList = query.getTables().split(",");
+	public String code() {
 		return "";
 	}
 
