@@ -1,4 +1,4 @@
-package top.jiangyixin.hades.common;
+package top.jiangyixin.hades.exception;
 
 /**
  * @author jiangyixin

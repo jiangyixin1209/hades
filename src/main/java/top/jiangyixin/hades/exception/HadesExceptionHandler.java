@@ -1,9 +1,10 @@
-package top.jiangyixin.hades.common;
+package top.jiangyixin.hades.exception;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
+import top.jiangyixin.hades.common.Result;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

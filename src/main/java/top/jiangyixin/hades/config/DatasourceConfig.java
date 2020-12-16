@@ -3,7 +3,7 @@ package top.jiangyixin.hades.config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import top.jiangyixin.hades.common.HadesException;
+import top.jiangyixin.hades.exception.HadesException;
 import top.jiangyixin.hades.common.enums.DataSourceEnum;
 import top.jiangyixin.hades.dao.GenerateDao;
 import top.jiangyixin.hades.dao.MysqlGenerateDao;
@@ -11,6 +11,7 @@ import top.jiangyixin.hades.dao.MysqlGenerateDao;
 import javax.annotation.Resource;
 
 /**
+ * 数据源配置
  * @author jiangyixin
  */
 @Configuration
