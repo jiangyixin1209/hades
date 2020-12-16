@@ -24,6 +24,7 @@
         <commons.lang.version>2.6</commons.lang.version>
         <commons.io.version>2.5</commons.io.version>
         <commons.configuration.version>1.10</commons.configuration.version>
+        <velocity.version>1.7</velocity.version>
     </properties>
 
     <dependencies>
@@ -67,6 +68,12 @@
             <groupId>commons-configuration</groupId>
             <artifactId>commons-configuration</artifactId>
             <version>${commons.configuration.version}</version>
+        </dependency>
+        <!-- velocity -->
+        <dependency>
+            <artifactId>velocity</artifactId>
+            <groupId>org.apache.velocity</groupId>
+            <version>${velocity.version}</version>
         </dependency>
         <!-- lombok -->
         <dependency>
