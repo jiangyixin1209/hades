@@ -131,6 +131,8 @@ public class CodeGenService {
 		}
 		return columnToJava(tableName);
 	}
+	
+	public static v
 
 	  public static void main(String[] args) {
 	     System.out.println(columnToJava("sys_user"));
