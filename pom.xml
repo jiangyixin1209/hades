@@ -21,6 +21,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <druild.version>1.1.10</druild.version>
         <mybatis.version>3.4.1</mybatis.version>
+        <page-helper.version>5.2.0</page-helper.version>
         <commons.lang.version>2.6</commons.lang.version>
         <commons.io.version>2.5</commons.io.version>
         <commons.configuration.version>1.10</commons.configuration.version>
@@ -52,6 +53,11 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>${druild.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${page-helper.version}</version>
         </dependency>
         <!-- apache commons -->
         <dependency>
