@@ -42,6 +42,7 @@ public class GeneratorService {
 	    for (String tableName : tableNames) {
 	       Map<String, String> tableInfo = queryTable(tableName);
 	       List<Map<String, String>> columnsInfo = queryColumns(tableName);
+	       CodeGenService.generateCode(tableInfo, columnsInfo, zipOutputStream);
  	    }
 		IOUtils.closeQuietly(zipOutputStream);
 	    return byteArrayOutputStream.toByteArray();
