@@ -3,12 +3,13 @@ package top.jiangyixin.hades.service;
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.WordUtils;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
-import top.jiangyixin.hades.common.TemplateConstant;
+import top.jiangyixin.hades.common.constant.TemplateConstant;
 import top.jiangyixin.hades.entity.Column;
 import top.jiangyixin.hades.entity.Table;
 import top.jiangyixin.hades.exception.HadesException;
@@ -70,6 +71,9 @@ public class CodeGenService {
 						configuration.getString("package"),
 						configuration.getString("moduleName"));
 				zipOutputStream.putNextEntry(new ZipEntry(filename));
+				IOUtils.write(sw.toString(), zipOutputStream, "UTF_8");
+				IOUtils.closeQuietly(sw);
+				zipOutputStream.closeEntry();
 			} catch (IOException e) {
 				throw new HadesException("渲染模板失败，表: " + table.getTableName(), e);
 			}

@@ -1,4 +1,4 @@
-package top.jiangyixin.hades.common;
+package top.jiangyixin.hades.common.constant;
 
 /**
  * 模板常量名

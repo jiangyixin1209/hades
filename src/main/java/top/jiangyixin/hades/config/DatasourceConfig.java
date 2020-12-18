@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 @Configuration
 public class DatasourceConfig {
 	@Value("${hades.datasource}: mysql")
-	private String datasource;
+	public static String datasource;
 	@Resource
 	private MysqlGenerateDao mysqlGenerateDao;
 
